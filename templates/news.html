@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+          <script>
+  $(document).ready( function () {
+      $('#datalist').DataTable({
+
+      });
+  } );
+
+  </script>
+    <table id="datalist" class="display nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>頻道</th>
+            <th>時間</th>
+            <th>訊息</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for all in messages %}
+        <tr>
+            <td>{{all[1]}}</td>
+            <td>{{all[2]}}</td>
+            <td>{{all[3]}}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
