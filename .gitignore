@@ -1,0 +1,7 @@
+*.session
+*.db
+*.ini
+*.csv
+.idea
+entity
+siang_entity
